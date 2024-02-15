@@ -1,0 +1,74 @@
+
+#projc {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.kotak {
+    color: white;
+    background-color: var(--text-dark);
+    justify-content: center;
+    text-align: center;
+    width: 26%;
+    padding-top: 1.5%;
+    margin-left: 2%;
+    padding-bottom: 1.5%;
+    margin-top: 10%;
+    border-radius: 10px;
+}
+
+.kotak img {
+    margin-top: 2%;
+    width: 80%;
+    height: auto;
+    box-shadow: 0px 0px 10px rgb(217, 217, 217);
+    border-radius: 5px;
+}
+
+.kotak h4 {
+    margin-top: 4%;
+}
+
+.kotak p {
+    margin: 20px;
+    margin-top: 2%;
+    color: var(--text-light);
+}
+
+.s {
+    margin-left: -0.5%;
+}
+
+.pad {
+    margin-top: 3%;
+}
+
+.project-box{
+    transition: transform 0.2s ease-in-out;
+}
+
+.project-box:hover{
+    transform: scale(1.05);
+}
+
+.project-box.hover{
+    transform: scale(1.05);
+}
+
+.project-box {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fade-up 1s ease-out forwards;
+}
+
+@keyframes fade-up{
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
